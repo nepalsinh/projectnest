@@ -11,7 +11,6 @@ import CreateProject from "../pages/dashboard/project/Create";
 import ProjectPage from "../pages/dashboard/project/ProjectPage";
 import NotFound from "../components/NotFound";
 import ProjectInfo from "../pages/dashboard/project/ProjectInfo";
-import ErrorPage from "../components/ErrorPage";
 import { InvitePage } from "../pages/dashboard/invites/page";
 
 

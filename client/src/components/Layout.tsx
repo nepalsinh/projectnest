@@ -1,25 +1,18 @@
-import React from 'react'
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button } from "@nextui-org/react";
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { SiGithub } from 'react-icons/si';
 import { AuthService } from '../helpers/AuthService';
 import { Logo } from './Logo';
 
 function Layout() {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const navigate = useNavigate();
 
     return (
         <>
             <Navbar
-                onMenuOpenChange={setIsMenuOpen}
                 className="dark:bg-neutral-950/70 bg-neutral-200/70"
             >
                 <NavbarContent>
-                    {/* <NavbarMenuToggle
-                        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                        className="sm:hidden"
-                    /> */}
                     <NavbarBrand>
                         <Link to={"/"} className="flex items-center gap-2">
                             <Logo />
