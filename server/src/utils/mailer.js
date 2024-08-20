@@ -67,10 +67,10 @@ const sendVerificationEmail = (to, token) => {
                 <div style="display:flex; justify-content:center;"><img src="https://kodeloom.vercel.app/KodeLoom.png" alt="ProjectNest" width="100px" height="100px" style="border-radius: 10px;" ></div>
                 <h1 class="heading">Welcome to ProjectNest!</h1>
                 <p>Thank you for signing up with us. To complete your registration, please verify your email address by clicking the button below.</p>
-                <p><a href=${process.env.SITEURL}/verifyEmail/${token} class="button">Verify Email</a></p>
+                <p><a href=https://theprojectnest.vercel.app/verifyEmail/${token} class="button">Verify Email</a></p>
                 <p>If you did not sign up with us, please ignore this email.</p><br>
                 <p>If you found any trouble in verification, try copy and paste below link in browser.</p>
-                <p>${process.env.SITEURL}/verifyEmail/${token}</p>
+                <p>https://theprojectnest.vercel.app/verifyEmail/${token}</p>
                 <br>
                 <p>Feel free to contact us on our <a href="mailto:${process.env.EMAILID}?subject=Feedback">email</a>
                  if you have any questions.</p>
@@ -128,7 +128,7 @@ const sendTaskAssignMail = (to, task) => {
                   <p><strong>Project:</strong> ${task.project.name}</p>
                   <p><strong>Due Date:</strong> ${task.dueDate}</p>
                   <p><strong>Description:</strong> ${task.description}</p>
-                  <p><a href=${process.env.SITEURL}/dashboard/p/${task.project._id} class="button" style="background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">View Task</a></p>
+                  <p><a href=https://theprojectnest.vercel.app/dashboard/p/${task.project._id} class="button" style="background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">View Task</a></p>
                 </div>
                 <br>
                 <p>Best regards,</p>
@@ -184,7 +184,7 @@ const sendInviteMail = (to, project, role) => {
                   <p><strong>Project Name:</strong> ${project.name}</p>
                   <p><strong>Project Description:</strong> ${project.description}</p>
                   <p><strong>Role :</strong> ${role.toUpperCase()}</p>
-                  <p><a href=${process.env.SITEURL}/dashboard/invites class="button" style="background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">View Invites</a></p>
+                  <p><a href=https://theprojectnest.vercel.app/dashboard/invites class="button" style="background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">View Invites</a></p>
                 </div>
                 <br>
                 <p>Best regards,</p>
